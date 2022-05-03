@@ -13,4 +13,27 @@
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
             // --- SOLUTION --- \\
-//1. genero un numero intero randomico tra 1 e 6
+// 1. genero un numero intero randomico tra 1 e 6 per l'utente e lo salvo in una variabile
+let userRandom = Math.floor(Math.random() * 6) + 1;
+console.log(userRandom);
+
+// 2. genero un numero intero randomico tra 1 e 6 per il PC e lo salvo in una variabile
+let pcRandom = Math.floor(Math.random() * 6) + 1;
+console.log(pcRandom);
+
+let winner = document.querySelector("div.winner");
+
+// 3. in base a chi fa il punteggio più alto, stampo il vincitore
+//SE il numero dell'utente è maggiore del numero del computer, ALLORA stampo "Hai vinto!!!";
+if (userRandom > pcRandom) {
+    winner.innerText = "Hai vinto!!!";
+//ALTRIMENTI, SE il numero dell'utente è minore del numero del computer, ALLORA stampo "Hai parso...";
+} else if (userRandom < pcRandom) {
+    winner.innerText = "Hai perso...";
+//ALTRIMENTI stampo "Pareggio";
+} else {
+    winner.innerText = "Pareggio";
+}
+
+
+

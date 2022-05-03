@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Dice</title>
         <link rel="stylesheet" href="css/style.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- /Font Awesome -->
     </head>
     <body>
+
+        <div class="container">
+            <div class="title">
+                <h1>
+                    <i class="fa-solid fa-dice"></i>
+                    Dice
+                    <i class="fa-solid fa-dice"></i>
+                </h1>
+            </div>
+            <div class="subtitle">
+                <h2>Prova a battere il computer in questo entusiasmante gioco di abilità.</h2>
+            </div>
+            <button>INIZIA!</button>
+            <div class="scores">
+                <div>
+                    <h3>Il tuo punteggio</h3>
+                    <div class="user score"></div>
+                </div>
+                <div>
+                    <h3>Il punteggio del PC</h3>
+                    <div class="pc score"></div>
+                </div>
+            </div>
+            <div class="winner"></div>
+        </div>
+
+
         
         <script src="js/main.js"></script>
     </body>
